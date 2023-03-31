@@ -62,31 +62,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 ]
             });
         });
-  dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
-  event: "view_item_list",
+  event: "view_item",
   ecommerce: {
-    item_list_id: "related_Courses",
-    item_list_name: "Courses",
-    items: [
-     {
-      item_id: "Course_001",
-      item_name: "Pyton",
-     coupon: "Student",
-      discount: 2.22,
-      index: 0,
-      item_brand: "Education",
-      item_category: "Free Course",
-      item_category2: "CS",
-      item_category3: "DS",
-      item_category4: "Programming",
-      item_category5: "Code",
-      item_list_id: "related_products",
-      price: 9.99,
-      quantity: 1
-    }]
+    
+    
+    item_Name: "web analytics",
+    item_id: 001,
+    currency: "USD",
+    value: 7.77,
   }
 });
+	</script>
 
 	</script>
 
